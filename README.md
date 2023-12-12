@@ -216,4 +216,5 @@ endmodule
 ![Screenshot 2023-12-12 213404](https://github.com/sumanguna/Experiment--05-Implementation-of-flipflops-using-verilog/assets/146914442/909e4468-d3c9-42af-8799-15f0db9d3356)
 
 ### RESULTS 
+Thus implementation of SR,JK,D and T flipflops using nand gates are done sucessfully.
 
