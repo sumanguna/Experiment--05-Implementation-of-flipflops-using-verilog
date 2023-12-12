@@ -135,22 +135,85 @@ endmodule
 ```
 
 ### RTL LOGIC FOR FLIPFLOPS 
-
-
-
-
-
-
-
-
+![Screenshot 2023-12-12 213221](https://github.com/sumanguna/Experiment--05-Implementation-of-flipflops-using-verilog/assets/146914442/5f46da39-5631-457f-adfc-0bd0e44e762a)
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
+![Screenshot 2023-12-12 213232](https://github.com/sumanguna/Experiment--05-Implementation-of-flipflops-using-verilog/assets/146914442/657c96a8-fd24-4fe4-89ba-3e2ed62b5680)
 
+## Program 2
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: SUMAN.G
 
+RegisterNumber:  23014256
 
+```
+module jk(q,qbar,k,j,clk);
+input j,k,clk;
+output q,qbar;
+wire nand1_out;
+wire nand2_out;
+nand(nand1_out,j,clk,qbar);
+nand(nand2_out,k,clk,q);
+nand(q,nand1_out,qbar,qbar);
+nand(qbar,nand2_out,q);
+endmodule
 
+```
+### RTL LOGIC FOR FLIPFLOPS 
+![Screenshot 2023-12-12 213247](https://github.com/sumanguna/Experiment--05-Implementation-of-flipflops-using-verilog/assets/146914442/1d99802b-bd24-42d3-900c-0995481b326f)
 
+### TIMING DIGRAMS FOR FLIP FLOPS 
+![Screenshot 2023-12-12 213259](https://github.com/sumanguna/Experiment--05-Implementation-of-flipflops-using-verilog/assets/146914442/ace6141a-6e60-434a-9c2e-9b9121838b75)
 
+## Program 3
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: SUMAN.G
 
+RegisterNumber:  23014256
+
+```
+module d(q,qbar,d1,clk);
+input d1,clk;
+output q,qbar;
+wire n1;
+wire n2;
+not(x,d1);
+nand(n1,clk,d1);
+nand(n2,clk,x);
+nand(q,n2,qbar);
+nand(qbar,n1,q);
+endmodule
+
+```
+### RTL LOGIC FOR FLIPFLOPS 
+![Screenshot 2023-12-12 213322](https://github.com/sumanguna/Experiment--05-Implementation-of-flipflops-using-verilog/assets/146914442/698f2ff8-61cf-467e-bed8-623b3ea826f0)
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+![Screenshot 2023-12-12 213339](https://github.com/sumanguna/Experiment--05-Implementation-of-flipflops-using-verilog/assets/146914442/247225d9-e710-405f-a193-333ef3ebbd1f)
+
+## Program 4
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: SUMAN.G
+
+RegisterNumber:  23014256
+
+```
+module tff(t,qbar,q,clk);
+input t,clk;
+output q,qbar;
+wire n1,n2;
+nand(n1,t,clk,qbar);
+nand(n2,clk,t,q);
+nand(q,n1,qbar);
+nand(qbar,n2,q);
+endmodule
+
+```
+### RTL LOGIC FOR FLIPFLOPS 
+![Screenshot 2023-12-12 213350](https://github.com/sumanguna/Experiment--05-Implementation-of-flipflops-using-verilog/assets/146914442/a7faf117-a737-467c-abd3-9a6b5c7acf14)
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+![Screenshot 2023-12-12 213404](https://github.com/sumanguna/Experiment--05-Implementation-of-flipflops-using-verilog/assets/146914442/909e4468-d3c9-42af-8799-15f0db9d3356)
 
 ### RESULTS 
+
